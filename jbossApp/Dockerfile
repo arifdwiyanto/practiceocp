@@ -26,7 +26,7 @@ ADD jboss-eap-7.3.0.zip /tmp/jboss-eap-7.3.0.zip
 RUN unzip /tmp/jboss-eap-7.3.0.zip
 
 # set environment
-ENV JBOSS_HOME /opt/rh/jboss-eap-7.3.0
+ENV JBOSS_HOME /opt/rh/jboss-eap-7.3
 
 # create JBoss console user
 RUN $JBOSS_HOME/bin/add-user.sh admin admin@2021 --silent
