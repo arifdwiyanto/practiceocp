@@ -43,7 +43,8 @@ EXPOSE 8080 9990 9999
 ENTRYPOINT $JBOSS_HOME/bin/standalone.sh -c standalone-full-ha.xml
 
 # deploy app
-ADD myapp.war "$JBOSS_HOME/standalone/deployments/"
+ADD sampleapp.war "$JBOSS_HOME/standalone/deployments/"
+#sampleapp download: https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/
 
 USER jboss
 CMD /bin/bash
